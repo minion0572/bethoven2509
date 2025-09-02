@@ -20,19 +20,19 @@ def menu():
         for salary in result_salaries:
             print(salary)
     elif choice == 3:
-        salary = int(input("Search Salary"))
+        salary = int(input("Search Salary: "))
         index = read_by_salary(salary)
         if salary == -1:
             print("Salary not Found")
         else:
-            print(f'salary is at index{index}')
+            print(f'salary is at index {index}')
     elif choice == 4:
         old_salary = int(input("salary to update"))
         new_salary = int(input("New Salary"))
-        update(salary , new_salary)
+        update(old_salary , new_salary)
 
     elif choice == 5:
-        salary = int(input("Salary to delete"))
+        salary = int(input("Salary to delete: "))
         delete_by_salary(salary)
     return choice
 
